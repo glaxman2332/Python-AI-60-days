@@ -19,7 +19,7 @@ if Experience >= 6 :
 elif Experience  >=3 :
     print(f"{name} you are a Mid-level developer !")
 else:
-    print(f"{name}! you are junior-Developer ")
+    print(f"{name}! you are junior-Developer \n")
 
 
 # if Experience >= 4:
@@ -33,4 +33,45 @@ else:
 #     print(f"{name}! you are mid-level devoloper ")
 # else :
 #     print(f"{name}! you are junior devoloper ")
-    
+
+
+
+print("   ---- Day-2 beginner coding challenge ----")
+number = int(input("Enter a Integer: "))
+
+if number > 0:
+    print(f"{number} is a positive number.\n")
+
+elif number < 0:
+    print(f"{number} is a negative number.\n")
+
+else:
+    print(f"{number} is zero.\n")
+
+
+print("   ---- Day-2 User log in ----")
+
+username = input("Enter Username: ")
+password = input("Enter Password: ")
+
+if username == "Laxman" and password == "Laxman@1234":
+    print("you are successfully logged in!")
+
+elif  username == "Laxman" and not password =="Laxman@1234":
+    print("Incorrect Password")
+else:
+    print("Incorrect Username")
+
+
+print("   ---- Day-2 Loan Approaval ----")
+
+name = input("Enter your Full Name: ")
+age = int(input("Enter your age: "))
+salary = int(input("Enter your Monthly Salary $: "))
+credit_score = int(input("Enter your cibil score: "))
+loan = input("you have an excisting loan(Yes/No): ").lower()
+
+if age >= 21 and salary >= 3000 and credit_score >= 700 and loan == "no":
+    print(f"congratulations! {name} , you are eligible to get a loan.")
+else:
+    print(f"Sorry! {name} , you are not eligible to get a loan.")
